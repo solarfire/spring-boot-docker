@@ -8,6 +8,9 @@ public class InitController {
 
     @GetMapping(value="init")
     public String init() {
-        return "System Up!.  <br>Running on Architecture [" + System.getProperty("os.arch") + "], OS [" + System.getProperty("os.name") + ", version" + System.getProperty("os.version") + "]";
+        return "System Up! Running on Tomcat Web Server.  <br>Running on Architecture ["
+                + System.getProperty("os.arch") + "], OS ["
+                + System.getProperty("os.name") + ", version"
+                + System.getProperty("os.version") + "]";
     }
 }
